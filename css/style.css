@@ -18,7 +18,9 @@ body {
 	height: auto;
 	width: auto;
 }
-
+#walid {
+	float: right;
+}
 .moi {
   border: 2px solid gainsboro;
   overflow:hidden;
@@ -64,7 +66,6 @@ h4 {
 }
 
 ul {
-
 	list-style: none;
 }
 
@@ -104,7 +105,8 @@ header ul li i {
 }
 
 article {
-	margin-top: 20px;
+	width: 65%;
+	margin: 100px auto;
 }
 
 article h2 {
@@ -165,11 +167,13 @@ article .tech span {
 	font-weight: 600;
 	color:  #283747 ;
 }
-#entre {
+#footer {
 	background-image: url("/home/userpop/git/resume/img/fond.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	padding: 50px;
+	padding: 100px;
+	height: auto;
+	width: auto;
 }
