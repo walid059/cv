@@ -20,6 +20,9 @@ nav {
  font-size: 12px;
  float: right;
  letter-spacing: 1px;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
 }
 
 a {
@@ -34,15 +37,9 @@ a {
   outline: none;
 }
 
-nav {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 #navigation {
 	margin-top: 150px;
-	width: 10%;
+	width: 5%;
 	height: 100%;
 	float: right;
 }
@@ -124,8 +121,8 @@ ul {
 	padding-left: 20px;
 }
 
-header {
-
+.header {
+	margin-left: 35px;
 }
 
 header h1 {
@@ -154,8 +151,8 @@ article h2 {
 
 article .header {
 	color: #283747;
-	float: right;
 	font-weight: 600;
+	margin-left: 122px;
 }
 
 article .header span {
@@ -167,7 +164,6 @@ article .right{
 	float: left;
 	width: 10%;
 	font-weight: 600;
-
 }
 
 article .description {
@@ -178,6 +174,7 @@ article .description {
 article .exp-list .fa {
 	padding-right: 5px;
 	font-size: 12px;
+	margin-left: 35px;
 }
 
 article ul li {
@@ -201,6 +198,7 @@ article .spacer {
 article .tech ul li {
 	max-width: 100% !important;
 }
+
 
 article .tech span {
 	font-weight: 600;
