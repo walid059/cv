@@ -9,7 +9,7 @@ body {
 }
 
 #accueil {
-	background-image: url("img/fond.jpg");
+	background-image: url("/home/userpop/git/resume/img/fond.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -71,7 +71,7 @@ ul {
 .container {
 	width: 50%;
 	height: auto;
-	margin: 420px auto 0px auto;
+	margin: auto auto 0px auto;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -164,4 +164,12 @@ article .tech ul li {
 article .tech span {
 	font-weight: 600;
 	color:  #283747 ;
+}
+#entre {
+	background-image: url("/home/userpop/git/resume/img/fond.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding: 50px;
 }
