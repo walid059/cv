@@ -17,7 +17,7 @@ nav {
  right: 0;
  padding: 30px 70px;
  text-align: center;
- font-size: 18px;
+ font-size: 12px;
  float: right;
  letter-spacing: 1px;
 }
@@ -25,13 +25,26 @@ nav {
 a {
   text-decoration: none;
   display: inline-block;
-  text-align: center;
+  text-align: right;
   text-transform: full-width;
   color:  #434a54;
   padding: 1px 0;
   margin: 0 10px;
   transition-duration: 0.5s;
   outline: none;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navigation {
+	margin-top: 150px;
+	width: 10%;
+	height: 100%;
+	float: right;
 }
 
 #accueil {
@@ -141,6 +154,7 @@ article h2 {
 
 article .header {
 	color: #283747;
+	float: right;
 	font-weight: 600;
 }
 
@@ -150,7 +164,7 @@ article .header span {
 }
 
 article .right{
-	float: right;
+	float: left;
 	width: 10%;
 	font-weight: 600;
 
@@ -162,7 +176,6 @@ article .description {
 }
 
 article .exp-list .fa {
-	color: red;
 	padding-right: 5px;
 	font-size: 12px;
 }
