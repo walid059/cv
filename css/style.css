@@ -1,11 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Indie+Flower');
 
 body {
-	/*border-top: 10px solid  #154360 ;*/
 	margin: 0;
 	color: grey;
-	/*background-color:   #ecf0f1;*/
-	font-family: 'Open Sans', sans-serif;
+  font-family: Comfortaa;
 	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
@@ -20,6 +67,9 @@ nav {
  font-size: 12px;
  float: right;
  letter-spacing: 1px;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
 }
 
 a {
@@ -34,15 +84,9 @@ a {
   outline: none;
 }
 
-nav {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 #navigation {
 	margin-top: 150px;
-	width: 10%;
+	width: 5%;
 	height: 100%;
 	float: right;
 }
@@ -61,19 +105,20 @@ nav {
 	float: right;
 }
 .moi {
-  border: 2px solid gainsboro;
+  border: 6px solid white;
   overflow:hidden;
 	float: left;
   margin: 0px 20px;
   -webkit-border-radius:50px;
   -moz-border-radius:50px;
-  border-radius:75px;
-  width:150px;
-  height:150px;
+  border-radius:120px;
+  width:200px;
+  height:200px;
 }
 
 h1 {
 	border-bottom: 0px solid  #1c2833;
+	font-family: 'Indie Flower', cursive;
 	display: inline-block;
 	color:  #283747;
 	font-weight: 600;
@@ -124,8 +169,8 @@ ul {
 	padding-left: 20px;
 }
 
-header {
-
+.header {
+	margin-left: 55px;
 }
 
 header h1 {
@@ -142,7 +187,9 @@ header ul li i {
 	padding-left: 5px;
 	font-size: 18px;
 }
-
+.lieu {
+	margin-left: 88px;
+}
 article {
 	width: 65%;
 	margin: 100px auto;
@@ -154,8 +201,8 @@ article h2 {
 
 article .header {
 	color: #283747;
-	float: right;
 	font-weight: 600;
+	margin-left: 170px;
 }
 
 article .header span {
@@ -167,7 +214,6 @@ article .right{
 	float: left;
 	width: 10%;
 	font-weight: 600;
-
 }
 
 article .description {
@@ -176,13 +222,14 @@ article .description {
 }
 
 article .exp-list .fa {
-	padding-right: 5px;
+	padding-right: 52px;
 	font-size: 12px;
+	margin-left: 35px;
 }
 
 article ul li {
 	min-height: 25px;
-	max-width: 80%;
+	max-width: 100%;
 }
 
 article .reference {
@@ -202,9 +249,39 @@ article .tech ul li {
 	max-width: 100% !important;
 }
 
+
 article .tech span {
 	font-weight: 600;
 	color:  #283747 ;
+}
+
+.about {
+	margin-top: 100px;
+	float: right;
+}
+.contact {
+	margin-top: 30px;
+}
+
+.ecart {
+	margin-bottom : -50px;
+}
+
+.containerabout {
+	margin-bottom: -80px;
+}
+
+.iconleft {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.iconcenter {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.iconright {
+	margin-left: 100px;
+	margin-right: 100px;
 }
 #footer {
 	background-image: url("/home/userpop/git/resume/img/fond.jpg");
@@ -215,4 +292,11 @@ article .tech span {
 	padding: 100px;
 	height: auto;
 	width: auto;
+}
+
+@media screen and (max-width: 1000px){
+	#flexbox > div.grid{
+		width: calc(100% - 20px);
+		margin: 0px 20px 20px 0px
+	}
 }
