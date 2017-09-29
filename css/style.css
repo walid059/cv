@@ -60,7 +60,6 @@ nav {
  box-sizing: border-box;
  position: fixed;
  top: 0;
- left: 0;
  right: 0;
  padding: 30px 70px;
  text-align: center;
@@ -85,11 +84,12 @@ a {
 }
 
 #navigation {
-	margin-top: -150px;
+	margin-top: -100.5px;
 	position: fixed;
 	top: 50%;
-	height: 400px;
-	right: 0px
+	width: 280px;
+	height: 201px;
+	right: 0px;
 }
 
 #navigation a{
@@ -105,6 +105,7 @@ a {
 	padding: 100px;
 	height: auto;
 	width: auto;
+	position: relative;
 }
 
 #navigation span {
@@ -115,10 +116,12 @@ a {
 #navigation a:hover span{
 	position: absolute;
 	display: block;
-	width: 100%;
+	width: 200px;
 	right: 0px;
 	margin-right: 50px;
-	margin-top: -25px
+	margin-top: -22px;
+	font-family: 'Indie Flower', cursive;
+	color:  #283747;
 }
 
 #walid {
@@ -288,7 +291,6 @@ article .tech span {
 }
 .about {
 	margin-top: 50px;
-	float: right;
 }
 .contact {
 	margin-top: 30px;
@@ -323,8 +325,59 @@ article .tech span {
 	width: auto;
 }
 
-@media screen and (max-width: 1000px){
-div{
-		width: calc(100% - 20px);
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 500px){
+	.iconleft img,.iconcenter img,.iconright img{
+			width: 35px;
+		}
+
+	#navigation{
+		display: none;
 	}
+
+	#accueil {
+		display: inline;
+		margin: auto;
+		text-align: center;
+	}
+	#walid {
+		display : block;
+		z-index: 999;
+	}
+	.iconleft {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin: 10px;
+	}
+	.iconcenter {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.iconright {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.about {
+		margin-top: 50px;
+	}
+
+	.about img {
+		width: 35px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+#accueil {
+	background-image: url("/home/userpop/git/resume/img/fond.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding: 100px;
+	height: 241px;
+	width: 150px;
+	position: relative;
+}
 }
