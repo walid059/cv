@@ -85,15 +85,20 @@ a {
 }
 
 #navigation {
-	margin-top: 150px;
-	width: 5%;
-	height: 100%;
-	float: right;
+	margin-top: -150px;
+	position: fixed;
+	top: 50%;
+	height: 400px;
+	right: 0px
+}
+
+#navigation a{
+	display: block;
 }
 
 #accueil {
 	background-image: url("/home/userpop/git/resume/img/fond.jpg");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -101,6 +106,21 @@ a {
 	height: auto;
 	width: auto;
 }
+
+#navigation span {
+	display: none;
+	margin: 0px;
+}
+
+#navigation a:hover span{
+	position: absolute;
+	display: block;
+	width: 100%;
+	right: 0px;
+	margin-right: 50px;
+	margin-top: -25px
+}
+
 #walid {
 	float: right;
 }
@@ -109,8 +129,8 @@ a {
   overflow:hidden;
 	float: left;
   margin: 0px 20px;
-  -webkit-border-radius:50px;
-  -moz-border-radius:50px;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
   border-radius:120px;
   width:200px;
   height:200px;
@@ -123,6 +143,7 @@ h1 {
 	color:  #283747;
 	font-weight: 600;
 	text-transform: uppercase;
+	margin-top: 50px;
 }
 
 h2 {
@@ -149,10 +170,6 @@ h4 {
 	text-transform: uppercase;
 }
 
-ul {
-	list-style: none;
-}
-
 .container {
 	width: 50%;
 	height: auto;
@@ -167,32 +184,37 @@ ul {
 .row {
 	padding-bottom: 15px;
 	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.containerpres {
+	margin-top: 100px;
 }
 
 .header {
-	margin-left: 55px;
+	margin-bottom: 7px;
 }
 
 header h1 {
 	font-size: 40pt;
 }
 
-header ul li {
-	height: 25px;
+header {
+	height: 200px;
 }
 
-header ul li i {
+header i {
 	color: black;
 	padding-right: 5px;
 	padding-left: 5px;
 	font-size: 18px;
 }
 .lieu {
-	margin-left: 88px;
+	margin-top: 20px;
 }
 article {
 	width: 65%;
-	margin: 100px auto;
+	margin: 55px auto;
 }
 
 article h2 {
@@ -202,7 +224,13 @@ article h2 {
 article .header {
 	color: #283747;
 	font-weight: 600;
-	margin-left: 170px;
+}
+
+.tache1 {
+	margin-top : 7px;
+}
+.tache {
+	margin-top : 3px;
 }
 
 article .header span {
@@ -211,9 +239,8 @@ article .header span {
 }
 
 article .right{
-	float: left;
-	width: 10%;
 	font-weight: 600;
+	margin-bottom: 10px;
 }
 
 article .description {
@@ -222,12 +249,10 @@ article .description {
 }
 
 article .exp-list .fa {
-	padding-right: 52px;
 	font-size: 12px;
-	margin-left: 35px;
 }
 
-article ul li {
+article {
 	min-height: 25px;
 	max-width: 100%;
 }
@@ -237,7 +262,7 @@ article .reference {
 	display: inline-block;
 }
 
-article .reference ul li {
+article .reference {
 	max-width: 100%;
 }
 
@@ -245,7 +270,7 @@ article .spacer {
 	height: 15px;
 }
 
-article .tech ul li {
+article .tech {
 	max-width: 100% !important;
 }
 
@@ -255,8 +280,14 @@ article .tech span {
 	color:  #283747 ;
 }
 
+.langues {
+	margin-top: 20px;
+}
+.personnelles {
+	margin-top: 20px;
+}
 .about {
-	margin-top: 100px;
+	margin-top: 50px;
 	float: right;
 }
 .contact {
@@ -264,11 +295,9 @@ article .tech span {
 }
 
 .ecart {
-	margin-bottom : -50px;
 }
 
 .containerabout {
-	margin-bottom: -80px;
 }
 
 .iconleft {
@@ -285,7 +314,7 @@ article .tech span {
 }
 #footer {
 	background-image: url("/home/userpop/git/resume/img/fond.jpg");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -295,8 +324,7 @@ article .tech span {
 }
 
 @media screen and (max-width: 1000px){
-	#flexbox > div.grid{
+div{
 		width: calc(100% - 20px);
-		margin: 0px 20px 20px 0px
 	}
 }
