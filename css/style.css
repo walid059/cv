@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -52,35 +52,35 @@ table {
 body {
 	margin: 0;
 	color: grey;
-  font-family: Comfortaa;
+	font-family: Comfortaa;
 	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 nav {
- box-sizing: border-box;
- position: fixed;
- top: 0;
- right: 0;
- padding: 30px 70px;
- text-align: center;
- font-size: 12px;
- float: right;
- letter-spacing: 1px;
- margin: 0;
- padding: 0;
- overflow: hidden;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 30px 70px;
+	text-align: center;
+	font-size: 12px;
+	float: right;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 a {
-  text-decoration: none;
-  display: inline-block;
-  text-align: right;
-  text-transform: full-width;
-  color:  #434a54;
-  padding: 1px 0;
-  margin: 0 10px;
-  transition-duration: 0.5s;
-  outline: none;
+	text-decoration: none;
+	display: inline-block;
+	text-align: right;
+	text-transform: full-width;
+	color:  #434a54;
+	padding: 1px 0;
+	margin: 0 10px;
+	transition-duration: 0.5s;
+	outline: none;
 }
 
 #navigation {
@@ -128,15 +128,15 @@ a {
 	float: right;
 }
 .moi {
-  border: 6px solid white;
-  overflow:hidden;
+	border: 6px solid white;
+	overflow:hidden;
 	float: left;
-  margin: 0 20px;
-  -webkit-border-radius:60px;
-  -moz-border-radius:60px;
-  border-radius:120px;
-  width:200px;
-  height:200px;
+	margin: 0 20px;
+	-webkit-border-radius:60px;
+	-moz-border-radius:60px;
+	border-radius:120px;
+	width:200px;
+	height:200px;
 }
 
 h1 {
@@ -331,14 +331,14 @@ article .tech span {
 
 @media screen and (max-width: 750px){
 	.iconleft img,.iconcenter img,.iconright img{
-			width: 50px;
-		}
+		width: 50px;
 	}
+}
 
 @media screen and (max-width: 600px){
 	.iconleft img,.iconcenter img,.iconright img{
-			width: 35px;
-		}
+		width: 35px;
+	}
 
 	#navigation{
 		display: none;
@@ -390,14 +390,14 @@ article .tech span {
 }
 
 @media screen and (max-width: 400px){
-#accueil {
-	background-image: url("../img/kanagawa.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	padding: 100px;
-	height: 90px;
-	width: 150px;
-}
+	#accueil {
+		background-image: url("../img/kanagawa.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		padding: 100px;
+		height: 90px;
+		width: 150px;
+	}
 }
