@@ -53,6 +53,7 @@ body {
 	margin: 0;
 	color: grey;
 	font-family: Comfortaa;
+	/*background-image: url("../img/parchemin.jpg");*/
 	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
@@ -132,8 +133,8 @@ a {
 	overflow:hidden;
 	float: left;
 	margin: 0 20px;
-	-webkit-border-radius:60px;
-	-moz-border-radius:60px;
+	-webkit-border-radius:120px;
+	-moz-border-radius:120px;
 	border-radius:120px;
 	width:200px;
 	height:200px;
@@ -147,6 +148,10 @@ h1 {
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-top: 50px;
+}
+
+p {
+	margin-top: 10px;
 }
 
 h2 {
@@ -281,6 +286,7 @@ article .tech {
 	margin-top: 20px;
 }
 
+
 article .tech span {
 	font-weight: 600;
 	color:  #283747 ;
@@ -299,22 +305,23 @@ article .tech span {
 	margin-top: 30px;
 }
 
-
 .containerabout article {
 	margin-bottom : 20px;
 }
 
-.iconleft {
-	margin-left: 100px;
-	margin-right: 100px;
+.os > a {
+	margin-left: 20px;
+	margin-right: 20px;
 }
-.iconcenter {
-	margin-left: 50px;
-	margin-right: 50px;
+
+.logiciel > a {
+	margin-left: 20px;
+	margin-right: 20px;
 }
-.iconright {
-	margin-left: 100px;
-	margin-right: 100px;
+
+.web > a {
+	margin-left: 20px;
+	margin-right: 20px;
 }
 #footer {
 	background-image: url("../img/kanagawa.jpg");
@@ -336,7 +343,23 @@ article .tech span {
 }
 
 @media screen and (max-width: 600px){
-	.iconleft img,.iconcenter img,.iconright img{
+	.moi {
+		border: 6px solid white;
+		overflow:hidden;
+		float: left;
+		margin: 4% 23% 0;
+		-webkit-border-radius:120px;
+		-moz-border-radius:120px;
+		border-radius:120px;
+		width:200px;
+		height:200px;
+	}
+
+	.containerpres {
+		margin-top: 180px;
+	}
+
+	.iconleft img,.iconcenter img,.iconright img, .iconleft1 img{
 		width: 35px;
 	}
 
@@ -353,11 +376,12 @@ article .tech span {
 		display : block;
 		z-index: 999;
 	}
-	.iconleft {
+	.iconleft, .iconleft1 {
 		margin-left: 10px;
 		margin-right: 10px;
 		margin: 10px;
 	}
+
 	.iconcenter {
 		margin-left: 10px;
 		margin-right: 10px;
