@@ -305,6 +305,25 @@ article .tech span {
 	margin-top: 30px;
 }
 
+.icon {
+	transition: 0.7s;
+	margin-top: 10px;
+}
+
+.icon:hover {
+	transform: scale(1.1, 1.1);
+	transition: 0.7s;
+}
+
+.iconabout {
+	transition: 0.7s;
+}
+
+.iconabout:hover {
+	transform: scale(1.1, 1.1);
+	transition: 0.7s;
+}
+
 .containerabout article {
 	margin-bottom : 20px;
 }
@@ -342,6 +361,17 @@ article .tech span {
 	}
 }
 
+.moi {
+	border: 6px solid white;
+	overflow:hidden;
+	margin: 0 20px;
+	-webkit-border-radius:120px;
+	-moz-border-radius:120px;
+	border-radius:120px;
+	width:200px;
+	height:200px;
+}
+
 @media screen and (max-width: 600px){
 	.moi {
 		border: 6px solid white;
@@ -361,6 +391,7 @@ article .tech span {
 
 	.iconleft img,.iconcenter img,.iconright img, .iconleft1 img{
 		width: 35px;
+
 	}
 
 	#navigation{
