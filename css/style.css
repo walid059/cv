@@ -57,6 +57,44 @@ body {
 	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
+h1 {
+	border-bottom: 0 solid  #1c2833;
+	font-family: 'Indie Flower', cursive;
+	display: inline-block;
+	color:  #283747;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+
+p {
+	margin-top: 10px;
+}
+
+h2 {
+	border-bottom: 3px solid  #1c2833;
+	display: inline-block;
+	color:  #283747;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h3 {
+	border-bottom: 3px solid  #1c2833;
+	display: inline-block;
+	color:  #283747;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h4 {
+	border-bottom: 3px solid  #1c2833;
+	display: inline-block;
+	color:  #283747;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
 nav {
 	box-sizing: border-box;
 	position: fixed;
@@ -82,6 +120,81 @@ a {
 	margin: 0 10px;
 	transition-duration: 0.5s;
 	outline: none;
+}
+
+h1 {
+	font-size: 40pt;
+}
+
+header {
+	height: 200px;
+}
+
+header i {
+	color: black;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-size: 18px;
+}
+
+article {
+	width: 65%;
+	margin: 55px auto;
+}
+
+article h2 {
+	font-size: 20pt;
+}
+
+article .header {
+	color: #283747;
+	font-weight: 600;
+}
+
+article .header span {
+	font-size: 10pt;
+	font-style: italic;
+}
+
+article .right{
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+article .description {
+	font-style: italic;
+	font-size: 9pt;
+}
+
+article .exp-list .fa {
+	font-size: 12px;
+}
+
+article {
+	min-height: 25px;
+	max-width: 100%;
+}
+
+article .reference {
+	width: 40%;
+	display: inline-block;
+}
+
+article .reference {
+	max-width: 100%;
+}
+
+article .spacer {
+	height: 15px;
+}
+
+article .tech {
+	max-width: 100% !important;
+}
+
+article .tech span {
+	font-weight: 600;
+	color:  #283747 ;
 }
 
 #navigation {
@@ -128,6 +241,18 @@ a {
 #walid {
 	float: right;
 }
+
+#footer {
+	background-image: url("../img/kanagawa.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding: 100px;
+	height: auto;
+	width: auto;
+}
+
 .moi {
 	border: 6px solid white;
 	overflow:hidden;
@@ -138,44 +263,6 @@ a {
 	border-radius:120px;
 	width:200px;
 	height:200px;
-}
-
-h1 {
-	border-bottom: 0 solid  #1c2833;
-	font-family: 'Indie Flower', cursive;
-	display: inline-block;
-	color:  #283747;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin-top: 50px;
-}
-
-p {
-	margin-top: 10px;
-}
-
-h2 {
-	border-bottom: 3px solid  #1c2833;
-	display: inline-block;
-	color:  #283747;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-h3 {
-	border-bottom: 3px solid  #1c2833;
-	display: inline-block;
-	color:  #283747;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-h4 {
-	border-bottom: 3px solid  #1c2833;
-	display: inline-block;
-	color:  #283747;
-	font-weight: 600;
-	text-transform: uppercase;
 }
 
 .container {
@@ -203,35 +290,8 @@ h4 {
 	margin-bottom: 7px;
 }
 
-h1 {
-	font-size: 40pt;
-}
-
-header {
-	height: 200px;
-}
-
-header i {
-	color: black;
-	padding-right: 5px;
-	padding-left: 5px;
-	font-size: 18px;
-}
 .lieu {
 	margin-top: 20px;
-}
-article {
-	width: 65%;
-	margin: 55px auto;
-}
-
-article h2 {
-	font-size: 20pt;
-}
-
-article .header {
-	color: #283747;
-	font-weight: 600;
 }
 
 .tache1 {
@@ -241,56 +301,10 @@ article .header {
 	margin-top : 3px;
 }
 
-article .header span {
-	font-size: 10pt;
-	font-style: italic;
-}
-
-article .right{
-	font-weight: 600;
-	margin-bottom: 10px;
-}
-
-article .description {
-	font-style: italic;
-	font-size: 9pt;
-}
-
-article .exp-list .fa {
-	font-size: 12px;
-}
-
-article {
-	min-height: 25px;
-	max-width: 100%;
-}
-
-article .reference {
-	width: 40%;
-	display: inline-block;
-}
-
-article .reference {
-	max-width: 100%;
-}
-
-article .spacer {
-	height: 15px;
-}
-
-article .tech {
-	max-width: 100% !important;
-}
-
 .logiciel,.web,.os {
 	margin-top: 20px;
 }
 
-
-article .tech span {
-	font-weight: 600;
-	color:  #283747 ;
-}
 
 .langues {
 	margin-top: 20px;
@@ -309,6 +323,10 @@ article .tech span {
 .icon {
 	transition: 0.7s;
 	margin-top: 10px;
+}
+
+.loisir div {
+ margin-bottom: 5px;
 }
 
 .icon:hover {
@@ -347,16 +365,7 @@ article .tech span {
 	margin-left: 20px;
 	margin-right: 20px;
 }
-#footer {
-	background-image: url("../img/kanagawa.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	padding: 100px;
-	height: auto;
-	width: auto;
-}
+
 
 /* MEDIA QUERIES */
 
@@ -428,6 +437,8 @@ article .tech span {
 	}
 	.about {
 		margin-top: 20px;
+		padding-left: 0px;
+		width: 100%;
 	}
 
 	.about img {
